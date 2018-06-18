@@ -1,0 +1,13 @@
+--cpu=Cortex-M4.fp
+".\objects\variometer_2.0.o"
+".\objects\am_util_delay.o"
+".\objects\am_util_faultisr.o"
+".\objects\am_util_stdio.o"
+".\objects\startup_keil.o"
+"C:\AmbiqMicro\AmbiqSuite\boards\apollo2_evb\bsp\keil\bin\libam_bsp.lib"
+"C:\AmbiqMicro\AmbiqSuite\mcu\apollo2\hal\keil\bin\libam_hal.lib"
+"C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib"
+--strict --scatter ".\variometer_2.0.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Variometer_2.map" -o .\Objects\Variometer_2.0
